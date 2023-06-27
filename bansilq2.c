@@ -7,7 +7,8 @@
 
 void main (){
 
-float bill,a,b,c,d;
+float bill,a,f;
+
 printf("-------------------------------------\n");
 printf("-----------ELECTRICITY BILL----------\n");
 printf("-------------------------------------\n\n");
@@ -24,23 +25,26 @@ scanf("%f",&bill);
 printf("\n*************************************\n\n");
 
 
-a=bill*0.50+100;
-b=25 + (bill - 50)*0.75+100;
-c=25 + 75 +(bill-150)*1.20+100;
-d=25 + 75 + 120 + (bill - 250 )*1.50+100;
 
 if(bill<=50){
-             printf("Electricity Bill = Rs.  %.1f",a);
-           
+             a= (bill*0.50);
+             f=a +a*0.2 ;        
+             printf("Electricity Bill = Rs.  %.1f",f);
+             
             }else if(bill<=150){
-                               printf("Electricity Bill = Rs.  %f",b);
+                                a=(25 + (bill - 50)*0.75);
+                                f=a +a*0.2;  
+                                printf("Electricity Bill = Rs.  %0.1f",f);
             }else if(bill<=250){
-                                printf("Electricity bill = Rs.  %.1f",c);
+                                a=(25 + 75 +(bill-150)*1.20);
+                                f=a +a*0.2;
+                                printf("Electricity bill = Rs.  %.1f",f);
 
-                               }else{
-                               printf("Electricity Bill = Rs.  %.1f",d);
-                               }
-
+            }else{
+                  a=(25 + 75 + 120 + (bill - 250 )*1.50);
+                  f=a +a*0.2;
+                  printf("Electricity Bill = Rs.  %.1f",f);
+            }
 
 
 return 0;
@@ -50,6 +54,6 @@ getch();
 /*Input:
        Enter electricity units: 435
 Output: 
-       Electricity Bill = Rs. 597.5
+       Electricity Bill = Rs. 597.0
 */
 
