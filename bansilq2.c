@@ -24,27 +24,22 @@ printf("      Enter electricity units:  ");
 scanf("%f",&bill);
 printf("\n*************************************\n\n");
 
-
-
 if(bill<=50){
              a= (bill*0.50);
-             f=a +a*0.2 ;        
-             printf("Electricity Bill = Rs.  %.1f",f);
-             
+                          
             }else if(bill<=150){
                                 a=(25 + (bill - 50)*0.75);
-                                f=a +a*0.2;  
-                                printf("Electricity Bill = Rs.  %0.1f",f);
-            }else if(bill<=250){
-                                a=(25 + 75 +(bill-150)*1.20);
-                                f=a +a*0.2;
-                                printf("Electricity bill = Rs.  %.1f",f);
-
-            }else{
-                  a=(25 + 75 + 120 + (bill - 250 )*1.50);
-                  f=a +a*0.2;
-                  printf("Electricity Bill = Rs.  %.1f",f);
+                                
+                     }else if(bill<=250){
+                                         a=(25 + 75 +(bill-150)*1.20);
+                                
+                            }else{
+                                  a=(25 + 75 + 120 + (bill - 250 )*1.50);
+                  
             }
+
+f =a +a*0.2 ;    
+printf(   "Electricity Bill = Rs.  %.1f",f);
 
 
 return 0;
