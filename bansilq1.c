@@ -16,7 +16,7 @@ scanf("%d",&a);
 printf("******************************************************************\n\n");
 
 printf("*********************\n");
-(a/2) ? printf(" This number is Even")
+(a%2==0) ? printf(" This number is Even")
       : printf(" This number is odd") ;
 printf("\n*********************\n");
 
