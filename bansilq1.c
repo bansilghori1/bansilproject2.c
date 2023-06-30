@@ -4,7 +4,7 @@
 #include<stdio.h>
 #include<conio.h>
 
-int main (){
+void main (){
 int a;
 printf("*************************************\n");
 printf(" know a number is either even or odd\n");
@@ -20,7 +20,6 @@ printf("*********************\n");
       : printf(" This number is odd") ;
 printf("\n*********************\n");
 
-return 0;
 getch();    
 }
 
