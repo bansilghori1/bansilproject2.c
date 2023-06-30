@@ -42,7 +42,6 @@ f =a +a*0.2 ;
 printf(   "Electricity Bill = Rs.  %.1f",f);
 
 
-return 0;
 getch();    
 }
 
